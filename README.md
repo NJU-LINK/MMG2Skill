@@ -1,19 +1,47 @@
-<div align="center">
+<p align="center">
+<pre align="center">
+<b>
+███╗   ███╗███╗   ███╗ ██████╗ ██████╗ ███████╗██╗  ██╗██╗██╗     ██╗     
+████╗ ████║████╗ ████║██╔════╝ ╚════██╗██╔════╝██║ ██╔╝██║██║     ██║     
+██╔████╔██║██╔████╔██║██║  ███╗ █████╔╝███████╗█████╔╝ ██║██║     ██║     
+██║╚██╔╝██║██║╚██╔╝██║██║   ██║██╔═══╝ ╚════██║██╔═██╗ ██║██║     ██║     
+██║ ╚═╝ ██║██║ ╚═╝ ██║╚██████╔╝███████╗███████║██║  ██╗██║███████╗███████╗
+╚═╝     ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
+</b>
+</pre>
+</p>
 
-<!-- TODO(header): replace with project logo / ASCII banner -->
-<h1>MMG2Skill</h1>
+<p align="center">
+  <a href="https://www.nju.edu.cn"><img src="assets/nju_logo.png" height="72" alt="Nanjing University"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://huggingface.co/Kwaipilot"><img src="assets/kwaipilot_logo.png" height="72" alt="Kwaipilot"></a>
+</p>
+<p align="center">
+  <b>NJU-LINK</b>&nbsp;&nbsp;×&nbsp;&nbsp;<b>Kwaipilot</b>
+</p>
 
-**Turning Public Multimodal Tutorials into Self-Revising Skills for VLM Agents**
+<h3 align="center">Can Agents Distill In-the-Wild Guides into Self-Evolving Skills?</h3>
 
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.12-blue.svg)](#)
+<p align="center">
+  <a href="https://arxiv.org/abs/2606.01993"><img src="https://img.shields.io/badge/arXiv-2606.01993-b31b1b.svg?style=for-the-badge" alt="arXiv"></a>
+  <a href="docs/README.md"><img src="https://img.shields.io/badge/docs-Architecture-blue.svg?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Docs"></a>
+</p>
+<p align="center">
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.10%20%7C%203.12-blue.svg?style=flat-square&logo=python&logoColor=white" alt="Python 3.10 | 3.12"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="License: MIT"></a>
+</p>
 
-[Quick Start](#quick-start) · [Benchmarks](#benchmarks) · [Architecture](docs/README.md) · [Documentation](#documentation) · [Citation](#citation)
+<p align="center">
+  <a href="#quick-start">Quick Start</a> &bull;
+  <a href="#benchmarks">Benchmarks</a> &bull;
+  <a href="docs/README.md">Architecture</a> &bull;
+  <a href="#documentation">Documentation</a> &bull;
+  <a href="#citation">Citation</a>
+</p>
 
-[English](README.md) · [中文](README.zh.md)
-
-</div>
+<p align="center">
+  <a href="README.md">English</a> &bull; <a href="README.zh.md">中文</a>
+</p>
 
 ---
 
@@ -166,14 +194,15 @@ Collected materials are used for research and evaluation only.
 
 ## Citation
 
-> 📌 Placeholder — to be updated on publication.
-
 ```bibtex
-@inproceedings{mmg2skill,
-  title     = {MMG2Skill: Turning Public Multimodal Tutorials into Self-Revising Skills},
-  author    = {Anonymous},
-  booktitle = {Under review},
-  year      = {2026},
+@misc{che2026mmg2skillagentsdistillinthewild,
+  title         = {MMG2Skill: Can Agents Distill In-the-Wild Guides into Self-Evolving Skills?},
+  author        = {Xinyu Che and Junqi Xiong and Yunfei Ge and Xinping Lei and Shihao Li and Hang Yan and Han Li and Yuanxing Zhang and Zhiqi Bai and Jinhua Hao and Ming Sun and Han Li and Jiaheng Liu},
+  year          = {2026},
+  eprint        = {2606.01993},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2606.01993},
 }
 ```
 
