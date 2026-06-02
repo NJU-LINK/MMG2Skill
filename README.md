@@ -1,11 +1,9 @@
-```
-███╗   ███╗███╗   ███╗ ██████╗ ██████╗ ███████╗██╗  ██╗██╗██╗     ██╗
-████╗ ████║████╗ ████║██╔════╝ ╚════██╗██╔════╝██║ ██╔╝██║██║     ██║
-██╔████╔██║██╔████╔██║██║  ███╗ █████╔╝███████╗█████╔╝ ██║██║     ██║
-██║╚██╔╝██║██║╚██╔╝██║██║   ██║██╔═══╝ ╚════██║██╔═██╗ ██║██║     ██║
-██║ ╚═╝ ██║██║ ╚═╝ ██║╚██████╔╝███████╗███████║██║  ██╗██║███████╗███████╗
-╚═╝     ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+    <img alt="MMG2Skill" src="assets/banner-light.png" width="700">
+  </picture>
+</p>
 
 <p align="center">
   <a href="https://www.nju.edu.cn"><img src="assets/nju_logo.png" height="72" alt="Nanjing University"></a>
