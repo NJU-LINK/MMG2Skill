@@ -1,0 +1,36 @@
+# @package _global_
+env:
+  provider_name: docker
+  path_to_vm: null
+  headless: true
+  screen_size: [1920, 1080]
+  action_space: pyautogui
+  observation_type: screenshot
+  client_password: password
+  stabilization_wait: 60.0
+  pre_evaluate_wait: 20.0
+  wait_action_duration: 20.0
+  recording: false
+
+agent:
+  agent_mode: vanilla
+  max_steps: 15
+  sleep_after_execution: 2.0
+
+tasks:
+  domain: all
+  task_id: null
+  task_file: configs/tasks/osworld_40.json
+  configs_base_dir: null
+  result_dir: results
+
+runner:
+  num_envs: 1
+
+skills:
+  force_regenerate: false
+
+reviser:
+  # OSWorld trajectories are long and the response / screenshot is
+  # information-dense; 15 predict-turns per analyzer chunk fits comfortably.
+  chunk_size: 15

@@ -1,0 +1,71 @@
+defaults:
+  - optional api: default
+  - _self_
+  - benchmark: ???
+
+hydra:
+  run:
+    dir: logs/${now:%Y-%m-%d_%H-%M-%S}_${hydra.runtime.choices.benchmark}
+  sweep:
+    dir: logs/${now:%Y-%m-%d_%H-%M-%S}_sweep
+    subdir: ${hydra.runtime.choices.benchmark}
+  job:
+    chdir: false
+  output_subdir: .hydra
+
+# Shared data & skills defaults
+data:
+  tutorial_dir: data_tutorial  # /{tutorial_type}/{benchmark} appended at runtime
+  tutorial_type: html          # html | screenshot | video (reserved)
+
+skills:
+  cache_dir: skills_cache      # /{model}/{benchmark}/{task_id} appended at runtime
+  max_images: 20               # cap on tutorial images sent to VLM; null = no cap
+
+# Reviser (skill refinement loop). Total attempts = max_attempts (>=1).
+# max_attempts=1 means "bare run, no analyze/refine". chunk_size is set
+# per-benchmark in configs/benchmark/*.yaml.
+reviser:
+  max_attempts: 1
+  analysis_max_tokens: 32768
+  refine_max_tokens: 32768
+  analysis_temperature: null
+  refine_temperature: null
+  # Context budget knobs
+  response_char_limit: 32768
+  rolling_summary_char_limit: 32768
+  tutorial_image_cap: 20
+  include_tutorial_in_refine: true
+  # Which analyzer signal marks the first early-stop candidate.
+  # no_issue: RootCauseAnalysis.issues is empty (backward-compatible default).
+  # likely_success: RootCauseAnalysis.outcome_assessment == "likely_success".
+  early_stop_signal: likely_success 
+  # Feed prior attempts' root_cause.xml into the refiner so it sees the
+  # history of edits and avoids undoing earlier fixes. Kept as a toggle
+  # for ablation; the analyzer self-assessment fields are always on.
+  history_in_refine: true
+  # Optional: use a different model for reviser analysis/refinement.
+  # If null or equal to agent.model, no -r_ suffix is added to run_name
+  # and attempt_1 stays in the canonical bucket.
+  model: null
+  base_url: null
+  api_key: null
+  # null → inherit from agent.use_max_completion_tokens; set true/false to override.
+  use_max_completion_tokens: null
+
+# Shared agent defaults
+agent:
+  model: gpt-4o
+  base_url: ${api.openai.base_url}
+  api_key: ${api.openai.api_key}
+  max_tokens: 32768
+  # temperature: null → omit from API call (required for reasoning models
+  # like qwen3-plus / o1 / o3 that reject the parameter). Set a float here
+  # or in benchmark/*.yaml to override for classic sampling models.
+  temperature: null
+  # Some reasoning-model endpoints (o1/o3, certain ep-* endpoints) reject
+  # the legacy `max_tokens` parameter and require `max_completion_tokens`.
+  # null → consult configs/api/model_overrides.json (keyed by model id or
+  # prefix). Set true/false here to force the flag regardless of the table.
+  use_max_completion_tokens: null
+  history_window: 3

@@ -1,0 +1,9 @@
+[submodule "OSWorld"]
+	path = OSWorld
+	url = https://github.com/xlang-ai/OSWorld.git
+[submodule "OpenHA"]
+	path = OpenHA
+	url = https://github.com/CraftJarvis/OpenHA.git
+[submodule "RLCard"]
+	path = RLCard
+	url = https://github.com/lemondinosaur/rlcard.git

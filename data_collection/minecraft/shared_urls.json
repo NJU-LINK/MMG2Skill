@@ -1,0 +1,20 @@
+[
+  {
+    "task_id": "_shared:gui_common",
+    "instruction": "Fast inventory/GUI manipulation shortcuts shared by all container tasks.",
+    "tutorial_url": "https://minecraft.wiki/w/Inventory",
+    "tutorial_urls": [
+      "https://minecraft.wiki/w/Controls",
+      "https://minecraft.wiki/w/Crafting"
+    ]
+  },
+  {
+    "task_id": "_shared:embodied_common",
+    "instruction": "Movement, mining and world-interaction techniques shared by non-GUI tasks.",
+    "tutorial_url": "https://minecraft.wiki/w/Mining",
+    "tutorial_urls": [
+      "https://minecraft.wiki/w/Sprinting",
+      "https://minecraft.wiki/w/Sneaking"
+    ]
+  }
+]

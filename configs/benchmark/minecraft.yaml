@@ -1,0 +1,40 @@
+# @package _global_
+benchmark: minecraft
+
+env:
+  render_size: [1920,1080]
+  # WAIT action duration, in seconds. Minecraft runs at 20 tps, so the value is
+  # converted internally to N*20 noop frames (sim ticks, not wall-clock sleep).
+  wait_action_duration: 4.0
+  max_repeat: 200
+  # Total sim-frame budget per task (20 tps, so 1200 = 60 s of game time).
+  # Overrides the upstream task_config["maximum_steps"] (default 600) so smelt
+  # / long-wait tasks don't exhaust the budget before finishing.
+  max_env_steps: 3600
+
+agent:
+  agent_mode: simple
+  model: qwen3.6-plus
+  max_steps: 60
+  # Post-step settle, in seconds. Appended as noop frames at 20 tps after each
+  # action so GUI transitions / animations stabilize before the screenshot is
+  # captured. 0.5 s = 10 noop frames.
+  sleep_after_execution: 1.5
+  history_window: 10
+
+tasks:
+  task_file: configs/tasks/minecraft_tasks.json
+  task_id: null
+  task_type: null
+  result_dir: results
+
+runner:
+  num_envs: 1
+
+skills:
+  force_regenerate: false
+
+reviser:
+  # Minecraft single-step info is terse but screenshots are dense; a
+  # smaller chunk keeps context budget under control.
+  chunk_size: 15

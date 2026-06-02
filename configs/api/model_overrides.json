@@ -1,0 +1,3 @@
+{
+  "gpt-5.5": { "use_max_completion_tokens": true }
+}

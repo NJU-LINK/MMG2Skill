@@ -1,0 +1,36 @@
+[
+  {
+    "task_id": "mahjong",
+    "instruction": "Play Mahjong (4 players) and be the first to complete a winning hand (4 sets + 1 pair).",
+    "tutorial_urls": [
+      "https://rlcard.org/games.html#mahjong",
+      "https://www.wikihow.com/Play-Mahjong",
+      "https://gamerules.com/rules/mahjong-tile-game/",
+      "https://zh.moegirl.org.cn/zh-hans/%E7%89%8C%E6%95%88%E7%8E%87",
+      "https://zh.moegirl.org.cn/zh-hans/%E5%BC%83%E5%92%8C"
+    ],
+    "game": "mahjong"
+  },
+  {
+    "task_id": "doudizhu",
+    "instruction": "Play Doudizhu (斗地主) as the Landlord against two Peasant opponents. Use strategic card play to empty your hand first and win the game.",
+    "tutorial_urls": [
+      "https://rlcard.org/games.html#dou-dizhu",
+      "https://www.pagat.com/climbing/doudizhu.html",
+      "https://en.wikipedia.org/wiki/Dou_dizhu",
+      "https://www.zhihu.com/question/20259138",
+      "https://www.zhihu.com/question/441566884"
+    ],
+    "game": "doudizhu"
+  },
+  {
+    "task_id": "nolimit_holdem",
+    "instruction": "Play No-Limit Texas Hold'em mastering variable bet sizing, all-in decisions, and stack management.",
+    "tutorial_urls": [
+      "https://rlcard.org/games.html#no-limit-texas-hold-em",
+      "https://upswingpoker.com/poker-rules/texas-holdem-rules/",
+      "https://www.pokernews.com/strategy/no-limit-holdem-strategy.htm"
+    ],
+    "game": "nolimit_holdem"
+  }
+]

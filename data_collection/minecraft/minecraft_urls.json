@@ -1,0 +1,182 @@
+[
+  {
+    "task_id": "craft_item:stick_zero",
+    "instruction": "Craft a stick from planks.",
+    "tutorial_url": "https://minecraft.wiki/w/Stick",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:torch_zero",
+    "instruction": "Craft a torch from a stick and coal or charcoal.",
+    "tutorial_url": "https://minecraft.wiki/w/Torch",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:crafting_table_zero",
+    "instruction": "Craft a crafting table from four planks.",
+    "tutorial_url": "https://minecraft.wiki/w/Crafting_Table",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:chest_zero",
+    "instruction": "Craft a chest from eight planks.",
+    "tutorial_url": "https://minecraft.wiki/w/Chest",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:bread_zero",
+    "instruction": "Craft bread from three wheat.",
+    "tutorial_url": "https://minecraft.wiki/w/Bread",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:bookshelf_zero",
+    "instruction": "Craft a bookshelf from planks and books.",
+    "tutorial_url": "https://minecraft.wiki/w/Bookshelf",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:wheat_zero",
+    "instruction": "Obtain wheat (e.g. by uncrafting a hay bale into nine wheat).",
+    "tutorial_url": "https://minecraft.wiki/w/Wheat",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:sugar_zero",
+    "instruction": "Craft sugar from sugar cane.",
+    "tutorial_url": "https://minecraft.wiki/w/Sugar",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:light_gray_dye_zero",
+    "instruction": "Craft light gray dye by combining gray and white dyes, or from an azure bluet / oxeye daisy / white tulip.",
+    "tutorial_url": "https://minecraft.wiki/w/Light_Gray_Dye",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:loom_zero",
+    "instruction": "Craft a loom from two string and two planks.",
+    "tutorial_url": "https://minecraft.wiki/w/Loom",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:oak_log_zero",
+    "instruction": "Mine an oak log from a tree.",
+    "tutorial_url": "https://minecraft.wiki/w/Oak_Log",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:dirt_zero",
+    "instruction": "Mine a dirt block.",
+    "tutorial_url": "https://minecraft.wiki/w/Dirt",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:cobblestone_zero",
+    "instruction": "Mine cobblestone by breaking stone with a pickaxe.",
+    "tutorial_url": "https://minecraft.wiki/w/Cobblestone",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:coal_ore_zero",
+    "instruction": "Mine a coal ore block with a pickaxe.",
+    "tutorial_url": "https://minecraft.wiki/w/Coal_Ore",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:iron_ore_zero",
+    "instruction": "Mine an iron ore block with a stone or better pickaxe.",
+    "tutorial_url": "https://minecraft.wiki/w/Iron_Ore",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:sugar_cane_zero",
+    "instruction": "Harvest a sugar cane plant.",
+    "tutorial_url": "https://minecraft.wiki/w/Sugar_Cane",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:pumpkin_zero",
+    "instruction": "Mine a pumpkin block.",
+    "tutorial_url": "https://minecraft.wiki/w/Pumpkin",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:sand_zero",
+    "instruction": "Mine a sand block.",
+    "tutorial_url": "https://minecraft.wiki/w/Sand",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:gravel_zero",
+    "instruction": "Mine a gravel block.",
+    "tutorial_url": "https://minecraft.wiki/w/Gravel",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "mine_block:melon_zero",
+    "instruction": "Mine a melon block.",
+    "tutorial_url": "https://minecraft.wiki/w/Melon",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:charcoal_zero",
+    "instruction": "Smelt a log in a furnace to obtain charcoal.",
+    "tutorial_url": "https://minecraft.wiki/w/Charcoal",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:sponge_zero",
+    "instruction": "Smelt a wet sponge in a furnace to obtain a sponge.",
+    "tutorial_url": "https://minecraft.wiki/w/Sponge",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:gold_ingot_zero",
+    "instruction": "Smelt gold ore in a furnace to obtain a gold ingot.",
+    "tutorial_url": "https://minecraft.wiki/w/Gold_Ingot",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:cooked_beef_zero",
+    "instruction": "Cook raw beef in a furnace to obtain steak.",
+    "tutorial_url": "https://minecraft.wiki/w/Steak",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:brick_zero",
+    "instruction": "Smelt a clay ball in a furnace to obtain a brick.",
+    "tutorial_url": "https://minecraft.wiki/w/Brick",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:green_dye_zero",
+    "instruction": "Smelt a cactus block in a furnace to obtain green dye.",
+    "tutorial_url": "https://minecraft.wiki/w/Green_Dye",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:dried_kelp_zero",
+    "instruction": "Smelt kelp in a furnace to obtain dried kelp.",
+    "tutorial_url": "https://minecraft.wiki/w/Dried_Kelp",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:smooth_stone_zero",
+    "instruction": "Smelt a stone block in a furnace to obtain smooth stone.",
+    "tutorial_url": "https://minecraft.wiki/w/Smooth_Stone",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:iron_nugget_zero",
+    "instruction": "Smelt an iron tool or iron/chainmail armor piece in a furnace to obtain an iron nugget.",
+    "tutorial_url": "https://minecraft.wiki/w/Iron_Nugget",
+    "tutorial_urls": []
+  },
+  {
+    "task_id": "craft_item:terracotta_zero",
+    "instruction": "Smelt a clay block in a furnace to obtain terracotta.",
+    "tutorial_url": "https://minecraft.wiki/w/Terracotta",
+    "tutorial_urls": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "task_name": "nolimit_holdem",
+    "task_type": "rlcard",
+    "seed_start": 263607842,
+    "num_seeds": 150
+  },
+  {
+    "task_name": "doudizhu",
+    "task_type": "rlcard",
+    "seed_start": 712301204,
+    "num_seeds": 30
+  },
+  {
+    "task_name": "mahjong",
+    "task_type": "rlcard",
+    "seed_start": 965204418,
+    "num_seeds": 30
+  }
+]

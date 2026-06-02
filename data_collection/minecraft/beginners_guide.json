@@ -1,0 +1,10 @@
+[
+  {
+    "task_id": "_beginners_guide",
+    "instruction": "Generic Minecraft beginner's guide tutorial; shared by all tasks for skill extraction.",
+    "tutorial_url": "https://zh.minecraft.wiki/w/Tutorial:%E6%96%B0%E6%89%8B%E6%89%8B%E5%86%8C?variant=zh-cn",
+    "tutorial_urls": [
+      "https://zh.minecraft.wiki/w/%E7%89%A9%E5%93%81%E6%A0%8F"
+    ]
+  }
+]

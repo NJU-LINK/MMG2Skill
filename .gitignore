@@ -1,0 +1,60 @@
+# Virtual environments
+.venv/
+.venv
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Data & cache
+tutorials/
+sop_cache/
+results*/
+docker_vm_data/
+rlcard_models/
+
+# API credentials (real secrets ignored; the template is tracked)
+configs/api/*
+!configs/api/default.yaml.example
+!configs/api/model_overrides.json
+scripts/minecraft/run_multi*
+scripts/osworld/run_multi*
+logs/
+data/
+data_tutorial/
+skills_cache*/
+
+# uv lock (各自环境解析，避免镜像源冲突)
+uv.lock
+
+# Mock prompt viewer snapshots
+anything2skill/tests/prompt_snapshots/
+
+# Analysis output
+analysis_picture/
+*_tmp
+
+# Codex
+.codex
+
+# Archived runs
+archive/
+
+# Endpoint-specific orchestration + analysis notes (contain account endpoint IDs)
+scripts/rlcard/run_all_models.sh
+problem.md
+
+# Local-only analysis artifacts (per-account reports, personal notebooks)
+rlcard-3game-report.md
+rlcard-3game-report.pdf
+notebook/
+notebooks/

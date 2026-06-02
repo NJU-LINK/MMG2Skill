@@ -1,0 +1,25 @@
+# @package _global_
+benchmark: mahjong
+
+env:
+  seed: null
+  opponent_type: nfsp    # dmc | nfsp | random | auto
+
+agent:
+  agent_mode: simple
+  max_steps: 60
+
+tasks:
+  num_games: 20
+  task_file: configs/tasks/rlcard.json
+  seed: null
+  result_dir: results
+
+runner:
+  num_envs: 1
+
+skills:
+  force_regenerate: false
+
+reviser:
+  chunk_size: 30

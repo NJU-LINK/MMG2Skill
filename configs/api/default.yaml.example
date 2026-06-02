@@ -1,0 +1,15 @@
+# API credentials template.
+#
+# Copy to configs/api/default.yaml and fill in your endpoint + key:
+#     cp configs/api/default.yaml.example configs/api/default.yaml
+#
+# Hydra loads this into the `api` package; config.yaml then wires
+# agent.base_url := ${api.openai.base_url} and agent.api_key := ${api.openai.api_key}.
+# Any OpenAI-compatible endpoint works (OpenAI, Azure, vLLM, OpenRouter, ...).
+#
+# Alternatively, skip this file and export OPENAI_BASE_URL / OPENAI_API_KEY;
+# VLMClient falls back to those environment variables.
+
+openai:
+  base_url: https://api.openai.com/v1
+  api_key: sk-your-key-here
