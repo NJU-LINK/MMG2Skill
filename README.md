@@ -1,10 +1,10 @@
 <p align="center">
 <pre align="center">
 <b>
-███╗   ███╗███╗   ███╗ ██████╗ ██████╗ ███████╗██╗  ██╗██╗██╗     ██╗     
-████╗ ████║████╗ ████║██╔════╝ ╚════██╗██╔════╝██║ ██╔╝██║██║     ██║     
-██╔████╔██║██╔████╔██║██║  ███╗ █████╔╝███████╗█████╔╝ ██║██║     ██║     
-██║╚██╔╝██║██║╚██╔╝██║██║   ██║██╔═══╝ ╚════██║██╔═██╗ ██║██║     ██║     
+███╗   ███╗███╗   ███╗ ██████╗ ██████╗ ███████╗██╗  ██╗██╗██╗     ██╗     
+████╗ ████║████╗ ████║██╔════╝ ╚════██╗██╔════╝██║ ██╔╝██║██║     ██║     
+██╔████╔██║██╔████╔██║██║  ███╗ █████╔╝███████╗█████╔╝ ██║██║     ██║     
+██║╚██╔╝██║██║╚██╔╝██║██║   ██║██╔═══╝ ╚════██║██╔═██╗ ██║██║     ██║     
 ██║ ╚═╝ ██║██║ ╚═╝ ██║╚██████╔╝███████╗███████║██║  ██╗██║███████╗███████╗
 ╚═╝     ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝
 </b>
@@ -101,7 +101,7 @@ openai:
 
 Or skip the file and export `OPENAI_BASE_URL` / `OPENAI_API_KEY` instead.
 
-Some reasoning endpoints (the o-series, certain `ep-*` endpoints) reject the legacy `max_tokens` parameter and require `max_completion_tokens`. Register them in `configs/api/model_overrides.json` (a tracked file, edit it directly):
+Some reasoning endpoints reject the legacy `max_tokens` parameter and require `max_completion_tokens`. Register them in `configs/api/model_overrides.json` (a tracked file, edit it directly):
 
 ```json
 {
