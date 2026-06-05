@@ -87,11 +87,11 @@ echo "Dirs:  ${DIRS[*]}"
 echo ""
 
 # Ensure the release exists (create as a draft-free release if missing).
-if gh release view "$TAG" "${REPO_ARGS[@]}" >/dev/null 2>&1; then
+if gh release view "$TAG" "${REPO_ARGS[@]+"${REPO_ARGS[@]}"}" >/dev/null 2>&1; then
     echo "Release $TAG already exists — assets will be overwritten where names collide."
 else
     echo "Creating release $TAG..."
-    gh release create "$TAG" "${REPO_ARGS[@]}" \
+    gh release create "$TAG" "${REPO_ARGS[@]+"${REPO_ARGS[@]}"}" \
         --title "RLCard opponent weights ($TAG)" \
         --notes "Trained RLCard opponent (人机) checkpoints. Fetch with scripts/rlcard/download_weights.sh --tag $TAG"
 fi
@@ -106,7 +106,7 @@ for name in "${DIRS[@]}"; do
     ( cd "$MODELS_ROOT" && tar czf "$archive" "$name"/*.pt )
     size="$(du -h "$archive" | cut -f1)"
     echo "  $(basename "$archive") ($size) → uploading"
-    gh release upload "$TAG" "$archive" "${REPO_ARGS[@]}" --clobber
+    gh release upload "$TAG" "$archive" "${REPO_ARGS[@]+"${REPO_ARGS[@]}"}" --clobber
 done
 
 echo ""

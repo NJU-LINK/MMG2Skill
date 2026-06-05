@@ -55,7 +55,7 @@ if [ -n "$REPO" ]; then
     REPO_ARGS=(--repo "$REPO")
 fi
 
-if ! gh release view "$TAG" "${REPO_ARGS[@]}" >/dev/null 2>&1; then
+if ! gh release view "$TAG" "${REPO_ARGS[@]+"${REPO_ARGS[@]}"}" >/dev/null 2>&1; then
     echo "Error: release '$TAG' not found on ${REPO:-<origin>}." >&2
     echo "List available releases: gh release list ${REPO:+--repo $REPO}" >&2
     exit 1
@@ -76,7 +76,7 @@ echo "Pattern: $PATTERN"
 echo ""
 
 echo "Downloading assets..."
-gh release download "$TAG" "${REPO_ARGS[@]}" --pattern "$PATTERN" --dir "$TMP" --clobber
+gh release download "$TAG" "${REPO_ARGS[@]+"${REPO_ARGS[@]}"}" --pattern "$PATTERN" --dir "$TMP" --clobber
 
 shopt -s nullglob
 archives=("$TMP"/*.tar.gz)
