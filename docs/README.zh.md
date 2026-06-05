@@ -14,6 +14,7 @@ MMG2Skill 的内部架构、数据流与开发者参考。安装与使用见[根
 | [Prompt 拼接流程](prompt-assembly.zh.md) | Kit prompt 如何拼装成 VLM 消息 | Benchmark 适配者、Agent 开发者 |
 | [Benchmark 适配指南](benchmark-adapter-guide.zh.md) | 如何编写新的 `BenchmarkKit` | Benchmark 适配者 |
 | [Reviser 修订循环](reviser-loop.zh.md) | 双桶 attempt 布局、early-stop 语义、analyze→refine 管线 | 运行消融或分析实验数据的研究者 |
+| [RLCard 人机权重](weights.zh.md) | 固定人机权重、GitHub Release 布局、上传/下载脚本 | 运行 RLCard benchmark 的用户 |
 
 ---
 

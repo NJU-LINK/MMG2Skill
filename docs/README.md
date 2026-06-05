@@ -14,6 +14,7 @@ It currently covers **OSWorld** (GUI automation), **OpenHA Minecraft** (open-wor
 | [Prompt Assembly Flow](prompt-assembly.md) | How Kit prompts are assembled into VLM messages | Benchmark adapters, Agent developers |
 | [Benchmark Adapter Guide](benchmark-adapter-guide.md) | How to write a new `BenchmarkKit` | Benchmark adapters |
 | [Reviser Revision Loop](reviser-loop.md) | Dual-bucket attempt layout, early-stop semantics, analyze→refine pipeline | Researchers running ablations or analyzing experiment data |
+| [RLCard Opponent Weights](weights.md) | Pinned opponent (人机) checkpoints, GitHub Release layout, upload/download scripts | Anyone running RLCard benchmarks |
 
 ---
 
